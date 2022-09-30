@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'Playfair Display', serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.navbar-dark{
+  background-color: #00796B;
+}
+.btn-primary {
+  background-color: #CDDC39;
+}
