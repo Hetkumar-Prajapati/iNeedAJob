@@ -9,6 +9,18 @@ var usersRouter = require('./controllers/users');
 
 var app = express();
 
+if(process.env.NODE_ENV !== 'production'){
+  require('dotenv').config()
+}
+
+const mongoose =require('mongoose')
+mongoose.connect(process.env.DATABASE_URL)
+.then((res) => {
+  console.log('connected to MongoDB')
+}).catch(() =>{
+  console.log('can not connect to MongoDB')
+})
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
