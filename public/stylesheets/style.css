@@ -1,18 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
 
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  font-family: 'Playfair Display', serif;
+  font: 14px 'Mukta', sans-serif;
 }
 
 a {
-  color: #00B7FF;
+  color: #CDDC39;
 }
 
-.navbar-dark{
-  background-color: #00796B;
+.navbar-dark {
+  background-color: #009688;
 }
+
 .btn-primary {
   background-color: #CDDC39;
+}
+
+.btn-primary:hover {
+  background-color: #009688 !important;
+}
+
+main {
+  padding-top: 20px;
+  padding-left: 50px;
 }

@@ -6,12 +6,12 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'I Need A Job' });
 });
 
-// get about 
+/* GET /about */
 router.get('/about', (req, res) => {
-  res.render('about',{ 
-    title: 'About this site' ,
-    content: 'we will put this stuff here'
+  res.render('about', {
+    title: 'About this Site',
+    content: 'We will put stuff here'
+  })
 })
-});
 
 module.exports = router;
